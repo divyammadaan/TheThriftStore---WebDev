@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.image1,
+.image2 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+.image3 {
+  margin-top: 5px;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+.section1 {
+  width: 100%;
+  height: 50rem;
+}
+.section1-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.section1-content img {
+  width: 25rem;
+  height: 40rem;
+}
+.section2 {
+  width: 100%;
+  height: 30rem;
+}
+.section2-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.kicks a,
+.drips a,
+.bags a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Irish Grover", system-ui;
+  font-size: 4rem;
+  text-decoration: none;
+  color: black;
+}
+
+.kicks img,
+.drips img,
+.bags img {
+  width: 20rem;
+  height: 20rem;
+}
+.section3 {
+  width: 100%;
+  height: 7rem;
+  background: black;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+}
+.section3 h1 {
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.section4 {
+  width: 100%;
+  height: 60rem;
+}
+.section4-grid {
+  width: 100%;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.item1 img,
+.item2 img,
+.item3 img,
+.item4 img,
+.item5 img,
+.item6 img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.search-bar {
+  display: none;
+  position: relative;
+  /* top:30pxPosition it below the search icon */
+  width: 200px; /* Adjust width as needed */
+}
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}

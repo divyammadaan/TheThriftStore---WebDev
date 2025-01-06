@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="/assests/loginpage.jpg" alt="Register Image">
+        <nav>
+            <p><a href="/home">THE THRIFT STORE</a></p>
+        </nav>
+        <div class="middle-part">
+            <h1>CREATE YOUR ACCOUNT</h1>
+            <p>TO JOIN OUR COMMUNITY, PLEASE FILL IN YOUR DETAILS BELOW</p>
+        </div>
+        <div class="register-page">
+            <p>REGISTER</p>
+            <form action="/register" method="POST">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

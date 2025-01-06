@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= metadata.title %></title>
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="heading1"><%= metadata.slogan %></div>
+        <div class="nav-second_part">
+          <div class="right-part">
+            <% function formatTitle(title) { %>
+            <% const formattedTitle = title.split('').map(char => {
+            if (char === ' ') {
+            return '<span class="space"> </span>';
+            } else {
+            return `<span>${char.toUpperCase()}</span>`;
+            }
+            }).join(''); %>
+            <h1><%- formattedTitle %></h1>
+            <% } %>
+            <%- formatTitle(metadata.title) %>
+          </div>
+          <div class="left-part">
+            <a href="javascript:void(0);" onclick="toggleSearchBar()">
+              <img src="./assests/search.png" alt="" class="image1">
+            </a>
+            <!-- Hidden Search Bar -->
+            <form action="search_results.html" method="get" class="search-bar" id="searchBar">
+              <input type="text" name="query" placeholder="Search products..." required />
+              <button type="submit">Search</button>
+            </form>
+            <a href="login.html"><img src="./assests/profile.png" alt="" class="image2"></a>
+            <a href="cart.html"><img src="./assests/cart.jpg" alt="" class="image3"></a>
+          </div>
+        </div>
+      </nav>
+      <div class="section1">
+        <div class="section1-content">
+          <img src="./assests/content1.png" alt="">
+          <img src="./assests/content2.png" alt="">
+          <img src="./assests/content3.png" alt="">
+
+        </div>
+      </div>
+      <div class="section2">
+        <div class="section2-content">
+          <div class="kicks">
+            <a href="kicks.html"><img src="./assests/kicks.png" alt="">
+              KICKS</a>
+          </div>
+          <div class="drips">
+            <a href="drips.html"> <img src="./assests/tshirt.png" alt="">
+              DRIPS</a>
+          </div>
+          <div class="bags">
+            <a href="handbags.html">
+              <img src="./assests/bags.png" alt="">
+              HANDBAGS
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+        <h1>T R E N D I N G</h1>
+      </div>
+      <div class="section4">
+        <div class="section4-grid">
+          <div class="item1">
+            <a href="kicks.html"><img src="./assests/item1.png" alt=""></a>
+          </div>
+          <div class="item2">
+            <a href="handbags.html"><img src="./assests/item2.png" alt=""></a>
+          </div>
+          <div class="item3">
+            <a href="kicks.html"><img src="./assests/item3.png" alt=""></a>
+          </div>
+          <div class="item4">
+            <a href="handbags.html"><img src="./assests/item4.png" alt=""></a>
+          </div>
+          <div class="item5">
+            <a href="kicks.html"><img src="./assests/item5.png" alt=""></a>
+          </div>
+          <div class="item6">
+            <a href="drips.html"><img src="./assests/item6.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="contactus">
+            Contact us 
+            <img src="./assests/contactus.png" alt="">
+          </div>
+          <div class="email">
+            Email:orders@thrift.co.in
+            <p>Phone:+91 xx</p>
+            <p>(Customer Relationship Team is Operational <br>Mon-Sun between 10 AM -07 PM IST)</p>
+          </div>
+
+        </div>
+        <div class="spam">
+          <h2>No spam.Just good offers, new releases and steal deals in your inbox.</h2>
+          <form action="">
+            <input type="email" name="Email" id="Email" placeholder="Email" >
+
+          </form>
+        </div>
+        <div class="copywrite">
+          &#169; 2024, The Trift Store
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/home.js"></script>
+</html>

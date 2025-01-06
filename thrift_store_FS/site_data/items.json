@@ -1,0 +1,129 @@
+[
+  {
+    "id": 11,
+    "category": "kicks",
+    "name": "Balmain Unicorn ",
+    "price": 50000,
+    "description": "Balmain Shoe",
+    "image": "/assests/kick1.png"
+  },
+  {
+    "id": 12,
+    "category": "kicks",
+    "name": "JORDAN 1 RETRO HIGH OG SP TRAVIS SCOTT MOCHA",
+    "price": 165000,
+    "image": "/assests/kick2.png"
+  },
+  {
+    "id": 13,
+    "category": "kicks",
+    "name": "Louis Vuitton Nike Air Force 1 Low By Virgil Abloh Black Metallic Silver",
+    "price": 900000,
+    "image": "/assests/kick3.png"
+  },
+  {
+    "id": 14,
+    "category": "kicks",
+    "name": "Jordan 1 Retro Low OG SP Travis Scott Black Phantom",
+    "price": 75000,
+    "image": "/assests/kick4.png"
+  },
+  {
+    "id": 15,
+    "category": "kicks",
+    "name": "Nike Air Jordan 1 Retro Low OG SP Travis Scott Olive",
+    "price": 30000,
+    "image": "/assests/kick5.png"
+  },
+  {
+    "id": 16,
+    "category": "kicks",
+    "name": "Nike Sb Dunk Low Diamond Supply Co x Tiffany",
+    "price": 250000,
+    "image": "/assests/kick6.png"
+  },
+  {
+    "id": 17,
+    "category": "kicks",
+    "name": "Nike SB Dunk Low Stussy Cherry Sneaker",
+    "price": 300000,
+    "image": "/assests/kick7.png"
+  },
+  {
+    "id": 18,
+    "category": "kicks",
+    "name": "Off-White x Air Jordan 1 Retro High OG Chicago",
+    "price": 600000,
+    "image": "/assests/kick8.png"
+  },
+  {
+    "id": 1,
+    "category": "drips",
+    "name": "Palm Angels Monogram Spray City T-Shirt New York",
+    "price": 24500,
+    "image": "/assests/drip1.png"
+  },
+  {
+    "id": 2,
+    "category": "drips",
+    "name": "Palm Angels T-SHIRT HAAS F1",
+    "price": 41999,
+    "image": "/assests/drip2.png"
+  },
+  {
+    "id": 3,
+    "category": "drips",
+    "name": "Drew House mascot hoodie washed grape",
+    "price": 34900,
+    "image": "/assests/drip3.png"
+  },
+  {
+    "id": 4,
+    "category": "drips",
+    "name": "AMIRI SPOTLIGHT CREWNECK",
+    "price": 109900,
+    "image": "/assests/drip4.png"
+  },
+  {
+    "id": 5,
+    "category": "drips",
+    "name": "Kenzo Japanese Denim Western T-Shirt",
+    "price": 49999,
+    "image": "/assests/drip5.png"
+  },
+  {
+    "id": 21,
+    "category": "handbags",
+    "name": "Chalk Tabby Leather Shoulder Bag",
+    "price": 24500,
+    "image": "/assests/handbag1.png"
+  },
+  {
+    "id": 22,
+    "category": "handbags",
+    "name": "Brown Le Bambinou Crossbody Bag",
+    "price": 78000,
+    "image": "/assests/handbag2.png"
+  },
+  {
+    "id": 23,
+    "category": "handbags",
+    "name": "Tan Rust Logo Cross Body Bag",
+    "price": 26500,
+    "image": "/assests/handbag3.png"
+  },
+  {
+    "id": 24,
+    "category": "handbags",
+    "name": "Speedy Bandoulière 20",
+    "price": 236000,
+    "image": "/assests/handbag4.png"
+  },
+  {
+    "id": 25,
+    "category": "handbags",
+    "name": "Medium Dior Book Tote",
+    "price": 250000,
+    "image": "/assests/handbag5.png"
+  }
+]

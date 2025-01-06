@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="/styles/order_details.css">
+  </head>
+  <body>
+    <%- include('partials/navbar', { storeName }) %> <!-- Navbar included at top -->
+    
+    <!-- Main content -->
+    <div class="main-content">
+      <h1>Order Details</h1>
+
+      <h3>Order ID: <%= order._id %></h3>
+      <p>Placed on: <%= new Date(order.createdAt).toLocaleDateString() %></p>
+      <p>Subtotal: ₹<%= order.subTotal %></p>
+
+      <h2>Items</h2>
+      <ul class="order-items">
+        <% order.items.forEach(item => { %>
+        <li>
+          <strong><%= item.name %></strong> (x<%= item.quantity %>) - ₹<%= item.price * item.quantity %>
+          <a href="/product/<%= item.productId %>">View Product</a>
+        </li>
+        <% }); %>
+      </ul>
+
+      <a href="/orders">Back to Orders</a>
+    </div>
+  </body>
+</html>

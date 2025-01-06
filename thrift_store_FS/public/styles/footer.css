@@ -1,0 +1,62 @@
+footer {
+  width: 100%;
+  background-color: black;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+  margin-left: 4rem;
+}
+.contactus {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  padding-top: 2rem;
+}
+.contactus img {
+  width: 2rem;
+  height: 1.6rem;
+  background: white;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: white;
+}
+.spam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+input {
+  width: 20rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  background: gray;
+  color: black;
+  padding: 0.5rem;
+}
+input::placeholder {
+  color: black;
+}
+.copywrite {
+  color: white;
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}

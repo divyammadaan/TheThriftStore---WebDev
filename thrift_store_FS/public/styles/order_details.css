@@ -1,0 +1,87 @@
+/* order_details.css */
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 10px;
+  min-height: calc(100vh - 80px); /* Adjust to leave space for navbar */
+  text-align: center;
+}
+
+/* Header styling */
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Order items styling */
+.order-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.order-items li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
+
+.order-items a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 10px;
+  display: block;
+}
+
+.order-items a:hover {
+  text-decoration: underline;
+}
+
+/* Back link styling */
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}

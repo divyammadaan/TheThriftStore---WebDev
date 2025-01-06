@@ -1,0 +1,39 @@
+{
+  "section1Images": [
+    "./assests/content3.png",
+    "./assests/content2.png",
+    "./assests/content1.png"
+  ],
+  "trendingItems": [
+    {
+      "class": "item1",
+      "link": "/category/kicks",
+      "image": "./assests/item1.png"
+    },
+    {
+      "class": "item2",
+      "link": "/category/handbags",
+      "image": "./assests/item2.png"
+    },
+    {
+      "class": "item3",
+      "link": "/category/kicks",
+      "image": "./assests/item3.png"
+    },
+    {
+      "class": "item4",
+      "link": "/category/handbags",
+      "image": "./assests/item4.png"
+    },
+    {
+      "class": "item5",
+      "link": "/category/kicks",
+      "image": "./assests/item5.png"
+    },
+    {
+      "class": "item6",
+      "link": "/category/drips",
+      "image": "./assests/item6.png"
+    }
+  ]
+}

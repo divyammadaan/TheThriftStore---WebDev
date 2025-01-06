@@ -1,0 +1,102 @@
+/* order.css */
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar (assuming you have a navbar element) */
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 10px;
+  min-height: calc(100vh - 80px); /* Adjust to leave space for navbar */
+  text-align: center;
+}
+
+/* Orders list styling */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Order box styling */
+.order {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.order h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.order p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.order a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.order a:hover {
+  text-decoration: underline;
+}
+
+.order button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.order button:hover {
+  background-color: #444;
+}
+
+/* No orders styling */
+p {
+  font-size: 1.2em;
+  color: #333;
+}

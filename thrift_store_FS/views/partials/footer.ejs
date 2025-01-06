@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/styles/footer.css">
+<footer>
+  <div class="footer-content">
+    <div class="contactus">
+      Contact us 
+      <img src="./assests/contactus.png" alt="Contact Us">
+    </div>
+    <div class="email">
+      Email: <%= contactInfo.email %>
+      <p>Phone: <%= contactInfo.phone %></p>
+      <p>(Customer Relationship Team is Operational <br>Mon-Sun between 10 AM - 07 PM IST)</p>
+    </div>
+  </div>
+  <div class="spam">
+    <h2>No spam. Just good offers, new releases and steal deals in your inbox.</h2>
+    <form action="">
+      <input type="email" name="email" id="email" placeholder="Email">
+    </form>
+  </div>
+  <div class="copywrite">
+    &#169; <%= new Date().getFullYear() %>, <%= storeName %>
+  </div>
+</footer>

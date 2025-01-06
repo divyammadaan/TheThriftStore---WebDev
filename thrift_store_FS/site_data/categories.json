@@ -1,0 +1,20 @@
+[
+  {
+    "class": "kicks",
+    "link": "/category/kicks",
+    "image": "./assests/kicks.png",
+    "name": "Kicks"
+  },
+  {
+    "class": "drips",
+    "link": "/category/drips",
+    "image": "./assests/tshirt.png",
+    "name": "Drips"
+  },
+  {
+    "class": "bags",
+    "link": "/category/handbags",
+    "image": "./assests/bags.png",
+    "name": "Handbags"
+  }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="/styles/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar', { storeName }) %>
+
+      <div class="section2">
+        <h1>Your Cart</h1>
+        <div id="cart-items">
+          <!-- Cart items will be displayed here dynamically -->
+          <% if (cart && cart.length > 0) { %>
+          <% let total = 0; %>
+          <% cart.forEach((item, index) => { %>
+          <% let itemTotal = item.price * item.quantity; %>
+          <% total += itemTotal; %>
+          <div class="cart-item" style="display: flex; align-items: center; margin-bottom: 15px;">
+            <img src="<%= item.image %>" alt="<%= item.name %>" style="width: 100px; height: 100px; margin-right: 20px;">
+            <div>
+              <p><strong><%= item.name %></strong></p>
+              <p>Quantity: <%= item.quantity %></p>
+              <p>Price: ₹<%= item.price %></p>
+              <p><strong>Subtotal: ₹<%= itemTotal %></strong></p>
+            </div>
+            <form action="/update-cart/<%= item.productId %>" method="POST" style="margin-left: 20px;">
+              <button class="actions" type="submit" name="action" value="increment">+</button>
+              <button class="actions" type="submit" name="action" value="decrement">-</button>
+            </form>
+          </div>
+          <% }) %>
+          <div id="cart-total">
+            <h2>Total: ₹<%= total %></h2>
+          </div>
+          <% } else { %>
+          <p>Your cart is empty.</p>
+          <% } %>
+        </div>
+
+        <form action="/checkout" method="POST" style="margin-left: 20px;">
+          <button class="button">Checkout</button>
+        </form>
+      </div>
+
+      <%- include('partials/footer', {contactInfo}) %>
+    </div>
+  </body>
+</html>

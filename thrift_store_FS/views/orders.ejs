@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders</title>
+    <link rel="stylesheet" href="/styles/order.css">
+  </head>
+  <body>
+    <%- include('partials/navbar', { storeName }) %> <!-- Navbar included at top -->
+    
+    <!-- Main content -->
+    <div class="main-content">
+      <h1>Your Orders</h1>
+
+      <% if (orders.length > 0) { %>
+      <div class="orders-list">
+        <% orders.forEach(order => { %>
+        <div class="order">
+          <h3>Order ID: <%= order._id %></h3>
+          <p>Placed on: <%= new Date(order.createdAt).toLocaleDateString() %></p>
+          <p>Subtotal: ₹<%= order.subTotal %></p>
+          <a href="/orders/<%= order._id %>">View Details</a> <!-- Add link to details -->
+          <form action="/reorder/<%= order._id %>" method="POST">
+            <button type="submit">Reorder</button>
+          </form>
+        </div>
+        <% }); %>
+      </div>
+      <% } else { %>
+      <p>You have no orders yet.</p>
+      <% } %>
+    </div>
+  </body>
+</html>

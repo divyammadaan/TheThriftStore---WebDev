@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar', { storeName }) %>
+      <div class="section1">
+        <div class="section1-content">
+          <% for (let image of section1Images) { %>
+          <img src="<%= image %>" alt="Section Image">
+          <% } %>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="section2-content">
+          <% for (let category of categories) { %>
+          <div class="<%= category.class %>">
+            <a href="<%= category.link %>">
+              <img src="<%= category.image %>" alt="<%= category.name %>">
+              <%= category.name.toUpperCase() %>
+            </a>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <div class="section3">
+        <h1>T R E N D I N G</h1>
+      </div>
+      <div class="section4">
+        <div class="section4-grid">
+          <% for (let item of trendingItems) { %>
+          <div class="<%= item.class %>">
+            <a href="<%= item.link %>">
+              <img src="<%= item.image %>" alt="Trending Item">
+            </a>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <%- include('partials/footer', { contactInfo }) %>
+    </div>
+  </body>
+  <script>
+  function toggleSearchBar() {
+    const searchBar = document.getElementById('searchBar');
+    if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+      searchBar.style.display = 'block';
+    } else {
+      searchBar.style.display = 'none';
+    }
+  }
+  </script>
+</html>

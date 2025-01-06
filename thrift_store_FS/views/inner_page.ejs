@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+    <link rel="stylesheet" href="/styles/inner_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <%- include('partials/navbar', { storeName }) %>
+      <%- include('partials/category_heading', { categories: categories }) %>
+    </div>
+
+    <div class="product-container">
+      <div class="product-image">
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+      </div>
+      <div class="product-info">
+        <h2><%= product.name %></h2>
+        <p class="price">₹<%= product.price.toLocaleString() %></p>
+        <ul>
+          <li><%= product.description %></li>
+        </ul>
+        <div class="product-actions">
+          <form action="/add-to-cart/<%= product.id %>" method="POST">
+            <button type="submit">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="contactus">Contact us</div>
+        <div class="email">Email: orders@thrift.co.in
+          <p>Phone: +91 xx</p>
+          <p>(Customer Relationship Team is Operational <br>Mon-Sun between 10 AM -07 PM IST)</p>
+        </div>
+      </div>
+      <div class="spam">
+        <h2>No spam. Just good offers, new releases, and steal deals in your inbox.</h2>
+        <form action="">
+          <input type="email" name="Email" id="Email" placeholder="Email">
+        </form>
+      </div>
+      <div class="copywrite">
+        &#169; 2024, The Thrift Store
+      </div>
+    </footer>
+
+    <script src="/js/add_to_cart.js"></script>
+  </body>
+</html>

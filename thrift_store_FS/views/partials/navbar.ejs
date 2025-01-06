@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/styles/navbar.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<nav>
+  <div class="heading1"><%= slogan %></div>
+  <div class="nav-second_part">
+    <div class="right-part">
+      <% function formatTitle(title) { %>
+      <% const formattedTitle = title.split('').map(char => {
+      if (char === ' ') {
+      return '<span class="space"> </span>';
+      } else {
+      return `<span>${char.toUpperCase()}</span>`;
+      }
+      }).join(''); %>
+      <h3><%- formattedTitle %></h3>
+      <% } %>
+      <a href="/" style="text-decoration: none; color: inherit; outline: none; ">
+      <%- formatTitle(storeName) %>
+      </a>
+    </div>
+    <div class="left-part">
+      <a href="/profile"><div class="icon">  <i class="fas fa-user"></i></div></a>
+      <a href="/cart"><div class="icon">  <i class="fas fa-shopping-cart"></i></div></a>
+</div>
+    </div>
+  </div>
+</nav>

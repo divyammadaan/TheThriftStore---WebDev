@@ -1,0 +1,91 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar (assuming you have a navbar element) */
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+/* Profile info styling */
+.profile-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.profile-info p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.profile-info strong {
+  font-weight: bold;
+}
+
+/* Button styling */
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Link styling */
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 10px;
+  min-height: calc(100vh - 80px); /* Adjust to leave space for navbar */
+  text-align: center;
+}
+
+/* Form styling */
+form {
+  margin-top: 20px;
+}
